@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
+import { Progress as ProgressBar } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { 
@@ -157,7 +157,7 @@ export const Progress = () => {
               <span className="text-muted-foreground">Progress</span>
               <span className="font-medium">{completedTasks}/{totalTasks}</span>
             </div>
-            <Progress value={completionRate} className="h-2" />
+            <ProgressBar value={completionRate} className="h-2" />
           </div>
           
           <div className="flex justify-between text-xs text-muted-foreground">
