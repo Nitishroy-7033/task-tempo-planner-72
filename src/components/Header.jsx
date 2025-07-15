@@ -1,4 +1,4 @@
-import { User, LogIn, Settings } from "lucide-react";
+import { User, LogIn, Settings, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -52,6 +52,13 @@ export const Header = () => {
                   >
                     <Settings className="mr-2 h-4 w-4" />
                     Manage Tasks
+                  </DropdownMenuItem>
+                  <DropdownMenuItem 
+                    className="cursor-pointer"
+                    onClick={() => navigate('/progress')}
+                  >
+                    <BarChart3 className="mr-2 h-4 w-4" />
+                    Progress
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem 
